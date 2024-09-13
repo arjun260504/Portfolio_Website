@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun KR - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home">
+                    <img src="https://res.cloudinary.com/dn1ywrgss/image/upload/v1726209547/ar_logo_vkljvy.png" alt="Logo">
+                </a>
+            </div>
+            <div class="toggle-btn" id="toggle-btn">&#9776;</div> <!-- Toggle button for mobile -->
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro">
+        <div class="container">
+            <div class="info">
+                <h1>Hello</h1>
+                <h2>My name is Arjun KR, and I'm a Mechanical Engineering student.</h2>
+                <p>
+                    Recent university graduate with strong experience in problem-solving and leading small projects.
+                    Looking for opportunities to contribute to organizational success and gain hands-on experience.
+                </p>
+                <p>Email: arjunramdoss@gmail.com | Phone: +91-7867824645 | Location: Thanjavur</p>
+                <a href="https://raw.githubusercontent.com/arjun260504/Portfolio_Website/main/Arjun's%20Resume.pdf" class="btn" download>Download CV</a>
+            </div>
+            <div class="profile-pic">
+                <img src="https://res.cloudinary.com/dn1ywrgss/image/upload/v1726209566/profile_zzaoqb.png" alt="Arjun KR">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="info">
+                <h1>About Me</h1>
+                <p>
+                    A driven Mechanical Engineering graduate with a passion for problem-solving and project management.
+                    My experiences have equipped me with a solid foundation in various technical skills and a keen interest in continuous learning.
+                    I thrive in dynamic environments where I can apply my knowledge, collaborate with others, and contribute to meaningful projects.
+                    My goal is to bring creativity and value to a forward-thinking team while continuing to grow both personally and professionally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="cards">
+        <h2>Education</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Bachelor of Engineering</h3>
+                <p>Vellore Institute of Technology Chennai (2021-2025)</p>
+                <p>CGPA: 5.98</p>
+            </div>
+            <div class="card">
+                <h3>Higher Secondary School</h3>
+                <p>Maxwell Matriculation Higher Secondary School (2020-2021)</p>
+                <p>Percentage: 88.3%</p>
+            </div>
+            <div class="card">
+                <h3>Secondary School Certificate</h3>
+                <p>Best Matriculation Higher Secondary School (2018-2019)</p>
+                <p>Percentage: 83.6%</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Proficient in web development, creating responsive designs and layouts.</p>
+            </div>
+            <div class="card">
+                <h3>Python (Basics)</h3>
+                <p>Experience in Python programming for data analysis and problem-solving.</p>
+            </div>
+            <div class="card">
+                <h3>SolidWorks</h3>
+                <p>Skilled in creating 3D designs and simulations for mechanical engineering projects.</p>
+            </div>
+            <div class="card">
+                <h3>Ansys Mechanical APDL</h3>
+                <p>Experience in using Ansys software for engineering simulations and analysis.</p>
+            </div>
+            <div class="card">
+                <h3>Microsoft Office</h3>
+                <p>Proficient in Microsoft Office tools including Word, Excel, and PowerPoint.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates">
+        <h2>Certificates</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Internship at VST Titanium Motors – Mercedes Benz</h3>
+                <p>Gained valuable hands-on experience in automobile services.</p>
+            </div>
+            <div class="card">
+                <h3>NPTEL - The Joy of Computing Using Python</h3>
+                <p>Completed an NPTEL course focused on enhancing Python programming skills.</p>
+            </div>
+            <div class="card">
+                <h3>Achieving the 21-day Milestone in Nxtcode Challenge</h3>
+                <p>Successfully completed the coding challenge by Nxtwave.</p>
+            </div>
+            <div class="card">
+                <h3>Nxtwave - Build Your Own Static Website</h3>
+                <p>Completed a web development course focused on building static websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact: arjunramdoss@gmail.com | +91-7867824645</p>
+        <p>Connect with me: 
+            <a href="https://www.linkedin.com/in/arjun-ramdoss-1880072a7/" class="social-link">LinkedIn</a> | 
+            <a href="https://github.com/arjun260504" class="social-link">GitHub</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript for Toggle Button -->
+    <script>
+        document.getElementById('toggle-btn').addEventListener('click', function() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
