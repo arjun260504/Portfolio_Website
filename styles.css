@@ -98,7 +98,7 @@ nav ul li a:hover {
     align-items: center;
     height: 80vh;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     color: #f4f4f4;
     width: 100%;
 }
@@ -167,7 +167,7 @@ nav ul li a:hover {
     align-items: center;
     height: 80vh;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     color: #f4f4f4;
     width: 100%;
 }
@@ -200,7 +200,7 @@ nav ul li a:hover {
 /* Cards Section */
 .education, .skills, .certificates {
     padding: 60px 20px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     color: #f4f4f4;
 }
 
