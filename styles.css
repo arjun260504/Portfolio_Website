@@ -15,11 +15,15 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #1e1e1e;
+    background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent background */
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -101,6 +105,7 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.7);
     color: #f4f4f4;
     width: 100%;
+    margin-top: 60px; /* Added margin-top to prevent content from hiding under the fixed navbar */
 }
 
 .container {
@@ -166,8 +171,8 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    padding: 60px 20px;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
     color: #f4f4f4;
     width: 100%;
 }
@@ -198,9 +203,9 @@ nav ul li a:hover {
 }
 
 /* Cards Section */
-.education, .skills, .certificates{
+.cards, .skills, .certificates {
     padding: 60px 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     color: #f4f4f4;
 }
 
@@ -213,56 +218,84 @@ nav ul li a:hover {
 }
 
 .card {
-    background: linear-gradient(135deg, #1e1e1e 0%, #000000 100%);
+    background: rgba(30, 30, 30, 0.8); /* Semi-transparent background */
     padding: 20px;
-    border-radius: 20px; /* Increased border-radius for a softer look */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Softer shadow */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
     flex: 1;
     max-width: 320px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     width: 100%;
-    overflow: hidden; /* Ensure content doesn’t overflow rounded corners */
 }
 
 .card:hover {
-    transform: translateY(-12px); /* Slightly increased elevation effect */
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.6); /* More pronounced shadow */
-    background: linear-gradient(135deg, #333333 0%, #000000 100%); /* Subtle background change on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 
 .card h3 {
-    font-size: 22px; /* Slightly larger font size */
+    font-size: 20px;
     margin-bottom: 10px;
-    color: #FF5F6D; /* Ferrari Red */
+    color: #FF5F6D;
 }
 
 .card p {
-    font-size: 16px; /* Slightly larger font size */
+    font-size: 15px;
     color: #f4f4f4;
-    line-height: 1.5; /* Improved readability */
 }
 
 /* Footer */
 footer {
-    background-color: #1e1e1e;
-    padding: 20px;
+    background: rgba(30, 30, 30, 0.8); /* Semi-transparent background */
+    padding: 20px 0;
     text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
-footer p {
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
     margin-bottom: 10px;
 }
 
-.social-link {
-    color: #FF5F6D;
+.footer-content a {
+    color: #FF5F6D; /* Ferrari Red */
     text-decoration: none;
+    font-weight: bold;
 }
 
-.social-link:hover {
-    color: #00FF00;
+.footer-content a:hover {
     text-decoration: underline;
 }
+
+footer a[href*="linkedin.com"], 
+footer a[href*="github.com"] {
+    color: #FF5F6D; /* Ferrari Red */
+}
+
+/* LinkedIn and GitHub Links Color */
+footer a[href*="linkedin.com"], 
+footer a[href*="github.com"] {
+    color: #FF5F6D; /* Ferrari Red */
+    text-decoration: underline;
+}
+
+/* Hover State for LinkedIn and GitHub Links */
+footer a[href*="linkedin.com"]:hover, 
+footer a[href*="github.com"]:hover {
+    color: #660000;
+}
+
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -362,30 +395,10 @@ p {
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
-}
-
-/* Additional Hover Effects */
-.btn:hover {
-    background-color: #333;
-    color: #00A3E0; /* Radiant Blue */
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
-}
-
-.card-container {
-    gap: 20px;
-}
-
-.profile-pic img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
