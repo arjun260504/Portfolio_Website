@@ -218,10 +218,11 @@ nav ul li a:hover {
 }
 
 .card {
-    background: rgba(30, 30, 30, 0.8); /* Semi-transparent background */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-color: #1e1e1e; /* Fallback background color */
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8); /* Darker shadow for emphasis */
     flex: 1;
     max-width: 320px;
     text-align: center;
@@ -230,8 +231,8 @@ nav ul li a:hover {
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
 }
 
 .card h3 {
@@ -247,7 +248,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background: rgba(30, 30, 30, 0.8); /* Semi-transparent background */
+    background:rgba(30, 30, 30, 0.3); /* Semi-transparent background */
     padding: 20px 0;
     text-align: center;
     width: 100%;
@@ -268,6 +269,14 @@ footer {
     margin-bottom: 10px;
 }
 
+.contact-mail, .contact-number{
+    color: #FF5F6D;
+}
+
+.contact-mail:hover, .contact-number:hover{
+    color: #00A3E0;
+}
+
 .footer-content a {
     color: #FF5F6D; /* Ferrari Red */
     text-decoration: none;
@@ -275,7 +284,7 @@ footer {
 }
 
 .footer-content a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 footer a[href*="linkedin.com"], 
@@ -287,13 +296,13 @@ footer a[href*="github.com"] {
 footer a[href*="linkedin.com"], 
 footer a[href*="github.com"] {
     color: #FF5F6D; /* Ferrari Red */
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Hover State for LinkedIn and GitHub Links */
 footer a[href*="linkedin.com"]:hover, 
 footer a[href*="github.com"]:hover {
-    color: #660000;
+    color: #00A3E0;
 }
 
 
