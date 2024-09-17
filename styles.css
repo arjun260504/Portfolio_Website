@@ -122,6 +122,7 @@ nav ul li a:hover {
     font-weight: bold;
     color: #FF5F6D; /* Ferrari Red */
     margin-bottom: 20px;
+    font-family: serif;
 }
 
 .info h2 {
@@ -308,7 +309,7 @@ footer a[href*="github.com"]:hover {
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
-    .intro, .about, .cards, .skills, .certificates {
+    .intro, .about, .education, .skills, .certificates {
         padding: 20px;
         text-align: center;
         display: block;
@@ -357,7 +358,8 @@ footer a[href*="github.com"]:hover {
 /* Additional Styles */
 section {
     position: relative;
-    padding: 20px;
+    padding: 20px 10px;
+    margin: 0px;
     overflow: hidden;
 }
 
