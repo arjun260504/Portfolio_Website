@@ -154,7 +154,7 @@ nav ul li a:hover {
 /* Button Styles */
 .btn {
     background-color: #FF5F6D;
-    color: white;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -314,6 +314,7 @@ footer a[href*="github.com"]:hover {
         text-align: center;
         display: block;
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .container {
