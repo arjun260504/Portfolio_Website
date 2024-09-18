@@ -329,6 +329,7 @@ footer a[href*="github.com"]:hover {
 
     .about{
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .container {
@@ -343,8 +344,6 @@ footer a[href*="github.com"]:hover {
 
     .profile-pic img {
         margin-top: 40px;
-        height: 150px;
-        width: 150px;
     }
 
     .btn {
@@ -372,19 +371,19 @@ footer a[href*="github.com"]:hover {
         font-size: 14px;
     }
 
-    .about .info {
-        padding: 0; /* Remove padding if needed */
-        margin-top: 20px; /* Space above the info section */
-    }
-
     .contact-number {
         display: none;
         position: relative; /* Necessary for ::before pseudo-element */
     }
 
     .contact-number::before {
+        content: '';
+        display: none;
+    }
+
+    .contact-number::after {
         content: 'Call Me';
-        color: #FF5F6D;
+        color: #FF5F6D; 
         display: inline;
     }
 }
