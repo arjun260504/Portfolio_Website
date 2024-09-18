@@ -17,6 +17,11 @@ body {
     font-size: 16px;
 }
 
+:root {
+    --navbar-height: 67px; /* Adjust this value based on the actual height of your navbar */
+}
+
+
 /* Header Styles */
 header {
     background-color: rgba(0, 0, 0, 0.75);
@@ -28,6 +33,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    height: var(--navbar-height)
 }
 
 .logo {
@@ -319,6 +325,15 @@ footer a[href*="github.com"]:hover {
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
+
+    header{
+        height: 80px;
+    }
+
+    section {
+        margin-top: 60px;
+    }
+
     .intro, .about, .education, .skills, .certificates {
         flex-direction: column;
         padding: 20px;
@@ -384,7 +399,7 @@ footer a[href*="github.com"]:hover {
 section {
     position: relative;
     padding: 20px 10px;
-    margin: 0px;
+    margin-top: var(--navbar-height);
     overflow: hidden;
 }
 
