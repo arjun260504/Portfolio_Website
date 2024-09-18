@@ -17,11 +17,6 @@ body {
     font-size: 16px;
 }
 
-:root {
-    --navbar-height: 67px; /* Adjust this value based on the actual height of your navbar */
-}
-
-
 /* Header Styles */
 header {
     background-color: rgba(0, 0, 0, 0.75);
@@ -33,7 +28,6 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    height: var(--navbar-height)
 }
 
 .logo {
@@ -390,7 +384,7 @@ footer a[href*="github.com"]:hover {
 section {
     position: relative;
     padding: 20px 10px;
-    margin-top: var(--navbar-height);
+    margin: 0px;
     overflow: hidden;
 }
 
