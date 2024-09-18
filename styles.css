@@ -322,6 +322,10 @@ footer a[href*="github.com"]:hover {
         width: 100%;
     }
 
+    .about{
+        margin-top: 20px;
+    }
+
     .container {
         flex-direction: column;
         text-align: center;
