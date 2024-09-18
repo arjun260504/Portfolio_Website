@@ -102,10 +102,9 @@ nav ul li a:hover {
     align-items: center;
     height: 80vh;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: transparent;
     color: #f4f4f4;
     width: 100%;
-    margin-top: 60px; /* Added margin-top to prevent content from hiding under the fixed navbar */
 }
 
 .container {
@@ -120,9 +119,10 @@ nav ul li a:hover {
 .info h1 {
     font-size: 48px;
     font-weight: bold;
-    color: #FF5F6D; /* Ferrari Red */
+    color: #FF5F6D;
     margin-bottom: 20px;
-    font-family: serif;
+    font-family: Georgia;
+    font-style: italic;
 }
 
 .info h2 {
@@ -173,7 +173,7 @@ nav ul li a:hover {
     align-items: center;
     height: 80vh;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: transparent;
     color: #f4f4f4;
     width: 100%;
 }
@@ -206,7 +206,7 @@ nav ul li a:hover {
 /* Cards Section */
 .education, .skills, .certificates {
     padding: 60px 20px;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background: transparent;
     color: #f4f4f4;
 }
 
@@ -219,7 +219,7 @@ nav ul li a:hover {
 }
 
 .card {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(100, 100, 100, 0.4) 100%);
     background-color: #1e1e1e; /* Fallback background color */
     padding: 20px;
     border-radius: 15px;
@@ -249,7 +249,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background:rgba(30, 30, 30, 0.3); /* Semi-transparent background */
+    background:black;
     padding: 20px 0;
     text-align: center;
     width: 100%;
