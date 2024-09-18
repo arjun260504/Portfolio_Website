@@ -345,6 +345,8 @@ footer a[href*="github.com"]:hover {
 
     .profile-pic img {
         margin-top: 40px;
+        height: 125px;
+        width: 125px;
     }
 
     .btn {
@@ -378,14 +380,14 @@ footer a[href*="github.com"]:hover {
     }
 
     .contact-number {
-        color: transparent; /* Hide actual number */
-        text-decoration: none; /* Remove underline */
+        display: none;
         position: relative; /* Necessary for ::before pseudo-element */
     }
 
     .contact-number::before {
         content: 'Call Me';
-        color: #FF5F6D
+        color: #FF5F6D;
+        display: inline;
     }
 }
 
