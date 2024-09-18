@@ -129,7 +129,12 @@
     </section>
 
     <footer id="contact">
-        <p>Contact: <span class = "contact-mail">arjunramdoss@gmail.com</span> | <span class = "contact-number">+91-7867824645</span></p>
+        <p>Contact: 
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arjunramdoss@gmail.com" class="social-link">arjunramdoss@gmail.com</a> | 
+            <a href="tel:+91-7867824645" class="social-link contact-number" onclick="handleClick(event, '+91-7867824645')">+91-7867824645</a>
+
+
+        </p>
         <p>Connect with me: 
             <a href="https://www.linkedin.com/in/arjun-ramdoss-1880072a7/" class="social-link">LinkedIn</a> | 
             <a href="https://github.com/arjun260504" class="social-link">GitHub</a>
@@ -142,6 +147,22 @@
             const navMenu = document.getElementById('nav-menu');
             navMenu.classList.toggle('show');
         });
+    </script>
+    <script>
+        function handleClick(event, text) {
+            if (window.innerWidth <= 768) {
+                // Mobile: Use the default href behavior (dialer)
+                return;
+            } else {
+                // Desktop: Prevent default behavior and copy text
+                event.preventDefault(); // Prevent default href action
+                navigator.clipboard.writeText(text).then(function() {
+                    alert('Copied to clipboard: ' + text);
+                }).catch(function(err) {
+                    console.error('Failed to copy text: ', err);
+                });
+            }
+        }
     </script>
 </body>
 </html>
