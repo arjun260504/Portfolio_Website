@@ -126,8 +126,9 @@ nav ul li a:hover {
     font-style: italic;
 }
 
-.info h1: hover:{
+.info h1:hover{
     color: #00A3E0;
+    transition: transform 0.5s;
 }
 
 .info h2 {
