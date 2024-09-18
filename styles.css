@@ -325,15 +325,6 @@ footer a[href*="github.com"]:hover {
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
-
-    header{
-        height: 40px;
-    }
-
-    section {
-        margin-top: 20px;
-    }
-
     .intro, .about, .education, .skills, .certificates {
         flex-direction: column;
         padding: 20px;
