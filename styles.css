@@ -282,30 +282,25 @@ footer {
     margin-bottom: 10px;
 }
 
-.contact-mail, .contact-number{
-    color: #FF5F6D;
-}
-
-.contact-mail:hover, .contact-number:hover{
-    color: #00A3E0;
-}
-
 .footer-content a {
     color: #FF5F6D; /* Ferrari Red */
     text-decoration: none;
     font-weight: bold;
 }
 
-.footer-content a:hover {
-    text-decoration: none;
+.contact-number {
+    display: inline;
+    color: #FF5F6D;
 }
 
-footer a[href*="linkedin.com"], 
-footer a[href*="github.com"] {
-    color: #FF5F6D; /* Ferrari Red */
+.contact-number:hover {
+    color: #00A3E0;
+    transition: 0.3s;
 }
 
 /* LinkedIn and GitHub Links Color */
+footer a[href*="https://mail.google.com/mail/?view=cm&fs=1&to=arjunramdoss@gmail.com"],
+footer a[href*="tel:+91-7867824645"],
 footer a[href*="linkedin.com"], 
 footer a[href*="github.com"] {
     color: #FF5F6D; /* Ferrari Red */
@@ -313,15 +308,19 @@ footer a[href*="github.com"] {
 }
 
 /* Hover State for LinkedIn and GitHub Links */
+footer a[href*="https://mail.google.com/mail/?view=cm&fs=1&to=arjunramdoss@gmail.com"]:hover,
+footer a[href*="tel:+91-7867824645"]:hover,
 footer a[href*="linkedin.com"]:hover, 
 footer a[href*="github.com"]:hover {
     color: #00A3E0;
+    transition: 0.3s;
 }
 
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .intro, .about, .education, .skills, .certificates {
+        flex-direction: column;
         padding: 20px;
         text-align: center;
         display: block;
@@ -329,7 +328,9 @@ footer a[href*="github.com"]:hover {
     }
 
     .about{
+        padding: 20px;
         margin-top: 20px;
+        text-align: center;
     }
 
     .container {
@@ -338,12 +339,12 @@ footer a[href*="github.com"]:hover {
     }
 
     .profile-pic {
-        margin: 0 auto; /* Center profile picture */
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 
     .profile-pic img {
         margin-top: 40px;
-        margin-bottom: 80px; /* Space below the profile picture */
     }
 
     .btn {
@@ -369,6 +370,22 @@ footer a[href*="github.com"]:hover {
 
     .info p {
         font-size: 14px;
+    }
+
+    .about .info {
+        padding: 0; /* Remove padding if needed */
+        margin-top: 20px; /* Space above the info section */
+    }
+
+    .contact-number {
+        color: transparent; /* Hide actual number */
+        text-decoration: none; /* Remove underline */
+        position: relative; /* Necessary for ::before pseudo-element */
+    }
+
+    .contact-number::before {
+        content: 'Call Me';
+        color: #FF5F6D
     }
 }
 
