@@ -289,7 +289,6 @@ footer {
 }
 
 .contact-number {
-    display: inline;
     color: #FF5F6D;
 }
 
@@ -338,6 +337,7 @@ footer a[href*="github.com"]:hover {
 
     .profile-pic {
         margin: 0 auto;
+        margin-top: 10px;
         padding-bottom: 20px;
     }
 
@@ -372,12 +372,14 @@ footer a[href*="github.com"]:hover {
 
     .contact-number {
         display: none;
-        position: relative; /* Necessary for ::before pseudo-element */
     }
 
-    .contact-number::before {
-        content: '';
-        display: none;
+    .footer-content::before {
+        content: "Call Me"; 
+        color: #FF5F6D; 
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block; /* Ensure it is visible */
     }
 
     .contact-number::after {
