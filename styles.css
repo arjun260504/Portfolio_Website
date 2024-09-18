@@ -338,11 +338,11 @@ footer a[href*="github.com"]:hover {
 
     .profile-pic {
         margin: 0 auto;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     .profile-pic img {
-        margin-top: 40px;
+        padding: 20px;
     }
 
     .btn {
