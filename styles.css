@@ -288,26 +288,28 @@ footer {
     font-weight: bold;
 }
 
-.contact-number {
-    color: #FF5F6D;
+.mobile-number {
+    display: none;
 }
 
-.contact-number:hover {
-    color: #00A3E0;
-    transition: 0.3s;
+.desktop-number {
+    display: inline;
 }
 
 /* LinkedIn and GitHub Links Color */
 footer a[href*="https://mail.google.com/mail/?view=cm&fs=1&to=arjunramdoss@gmail.com"],
 footer a[href*="tel:+91-7867824645"],
+footer a[href*="javascript:void(0)"],
 footer a[href*="linkedin.com"], 
 footer a[href*="github.com"] {
-    color: #FF5F6D;
+    color: #FF5F6D; /* Ferrari Red */
+    text-decoration: none;
 }
 
 /* Hover State for LinkedIn and GitHub Links */
 footer a[href*="https://mail.google.com/mail/?view=cm&fs=1&to=arjunramdoss@gmail.com"]:hover,
 footer a[href*="tel:+91-7867824645"]:hover,
+footer a[href*="javascript:void(0)"]:hover,
 footer a[href*="linkedin.com"]:hover, 
 footer a[href*="github.com"]:hover {
     color: #00A3E0;
@@ -369,16 +371,12 @@ footer a[href*="github.com"]:hover {
         font-size: 14px;
     }
 
-    .contact-number {
-        display: none;
+    .mobile-number {
+        display: inline;
     }
-
-    .footer-content::before {
-        content: "Call Me"; 
-        color: #FF5F6D; 
-        font-weight: bold;
-        margin-bottom: 10px;
-        display: block; /* Ensure it is visible */
+    
+    .desktop-number {
+        display: none;
     }
 }
 
