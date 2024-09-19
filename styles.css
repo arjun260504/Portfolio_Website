@@ -20,7 +20,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 1);
     height: 80px;
     padding: 20px;
     display: flex;
@@ -225,10 +225,16 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
+
 /* Cards Section */
 .education, .skills, .certificates {
     padding: 60px 20px;
     color: white;
+}
+
+.education h2, .skills h2, .certificates h2{
+    font-family: Georgia;
+    padding-left: 50px;
 }
 
 .card-container {
@@ -271,8 +277,11 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background:rgba(0, 0, 0, 0.75);
-    padding: 20px 0;
+    background:rgba(0, 0, 0, 0.8);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: auto;
+    height: 100px;
     text-align: center;
     width: 100%;
     position: relative;
