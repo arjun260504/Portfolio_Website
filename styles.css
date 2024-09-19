@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 40px;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 /* Header Styles */
 header {
     background-color: rgba(0, 0, 0, 0.75);
+    height: 80px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -82,6 +84,14 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    header{
+        height: auto;
+    }
+
     .toggle-btn {
         display: block;
         font-size: 30px;
@@ -185,9 +195,9 @@ nav ul li a:hover {
     align-items: center;
     height: 80vh;
     padding: 20px;
-    background: transparent;
     color: #f4f4f4;
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .about .container {
